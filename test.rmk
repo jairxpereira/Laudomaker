@@ -1,0 +1,70 @@
+#Borland make sample, (c) FiveTech Software 2005
+
+HBDIR=c:\harbour
+BCDIR=c:\bcc55
+FWDIR=c:\fwh
+
+#change these paths as needed
+.path.PRG = .\
+.path.OBJ = .\obj
+.path.CH  = $(FWDIR)\include;$(HBDIR)\include
+.path.C   = .\
+.path.rc  = .\
+
+#important: Use Uppercase for filenames extensions, in the next two rules!
+
+PRG =        \
+laudomaker.PRG    \
+
+
+PROJECT    : laudomaker.exe
+
+laudomaker.exe  : $(PRG:.PRG=.OBJ) $(C:.C=.OBJ) laudomaker.res
+   echo off
+   echo $(BCDIR)\bin\c0w32.obj + > b32.bc
+   echo obj\laudomaker.obj, + >> b32.bc
+   echo laudomaker.exe, + >> b32.bc
+   echo laudomaker.map, + >> b32.bc
+   echo $(FWDIR)\lib\FiveH.lib $(FWDIR)\lib\FiveHC.lib + >> b32.bc
+   echo $(HBDIR)\lib\rtl.lib + >> b32.bc
+   echo $(HBDIR)\lib\vm.lib + >> b32.bc
+   echo $(HBDIR)\lib\gtgui.lib + >> b32.bc
+   echo $(HBDIR)\lib\lang.lib + >> b32.bc
+   echo $(HBDIR)\lib\macro.lib + >> b32.bc
+   echo $(HBDIR)\lib\rdd.lib + >> b32.bc
+   echo $(HBDIR)\lib\dbfntx.lib + >> b32.bc
+   echo $(HBDIR)\lib\dbfcdx.lib + >> b32.bc
+   echo $(HBDIR)\lib\dbffpt.lib + >> b32.bc
+   echo $(HBDIR)\lib\hbsix.lib + >> b32.bc
+   echo $(HBDIR)\lib\debug.lib + >> b32.bc
+   echo $(HBDIR)\lib\common.lib + >> b32.bc
+   echo $(HBDIR)\lib\pp.lib + >> b32.bc
+   echo $(HBDIR)\lib\codepage.lib + >> b32.bc
+
+   rem Uncomment these two lines to use Advantage RDD
+   rem echo $(HBDIR)\lib\b32\rddads.lib + >> b32.bc
+   rem echo $(HBDIR)\lib\b32\Ace32.lib + >> b32.bc
+
+   echo $(BCDIR)\lib\cw32.lib + >> b32.bc
+   echo $(BCDIR)\lib\import32.lib + >> b32.bc
+   echo $(BCDIR)\lib\psdk\odbc32.lib + >> b32.bc
+   echo $(BCDIR)\lib\psdk\nddeapi.lib + >> b32.bc
+   echo $(BCDIR)\lib\psdk\iphlpapi.lib + >> b32.bc
+   echo $(BCDIR)\lib\psdk\rasapi32.lib, >> b32.bc
+
+   IF EXIST laudomaker.res echo laudomaker.res >> b32.bc
+   $(BCDIR)\bin\ilink32 -Gn -aa -Tpe -s @b32.bc
+   rem del b32.bc
+
+.PRG.OBJ:
+  $(HBDIR)\bin\harbour $< /L /N /W /Oobj\ /I$(FWDIR)\include;$(HBDIR)\include
+  $(BCDIR)\bin\bcc32 -c -tWM -I$(HBDIR)\include -oobj\$& obj\$&.c
+
+.C.OBJ:
+  echo -c -tWM -D__HARBOUR__ -DHB_API_MACROS > tmp
+  echo -I$(HBDIR)\include;$(FWDIR)\include >> tmp
+  $(BCDIR)\bin\bcc32 -oobj\$& @tmp $&.c
+  del tmp
+
+laudomaker.res : laudomaker.rc
+  $(BCDIR)\bin\brc32.exe -r laudomaker.rc

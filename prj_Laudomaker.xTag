@@ -1,0 +1,66 @@
+<!--
+################################################
+# xDevStudio Project - xdev@kssoftware.com.br  #
+# Created @ 24/07/2022 15:36:26                #
+#                                              #
+### Standard xDev TagList - Layout v1.5 ########
+-->
+<taglist>
+   <tag filename="C:\laudomaker\laudomaker.prg" name="Main" args=" " scope="PUBLIC" type="ptFunction" line="96">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="MenuMaker" args=" " scope="PUBLIC" type="ptFunction" line="137">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="Dummy" args=" " scope="PUBLIC" type="ptFunction" line="170">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="closesys" args=" " scope="PUBLIC" type="ptFunction" line="174">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgCliente" args=" " scope="PUBLIC" type="ptFunction" line="178">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgmtprima" args=" " scope="PUBLIC" type="ptFunction" line="234">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgproduto" args=" " scope="PUBLIC" type="ptFunction" line="300">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgEmitir" args=" " scope="PUBLIC" type="ptFunction" line="360">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgOper" args=" " scope="PUBLIC" type="ptFunction" line="459">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="wakeupsys" args=" " scope="PUBLIC" type="ptFunction" line="502">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetheader" args=" " scope="PUBLIC" type="ptFunction" line="603">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetfooter" args=" " scope="PUBLIC" type="ptFunction" line="681">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetprdtinfo" args=" " scope="PUBLIC" type="ptFunction" line="693">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetmtprimainfo" args=" " scope="PUBLIC" type="ptFunction" line="749">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetlaudo" args=" " scope="PUBLIC" type="ptFunction" line="786">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="listaClientes" args=" " scope="PUBLIC" type="ptFunction" line="826">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="setcliconfig" args="<nrec> " scope="PUBLIC" type="ptFunction" line="867">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="listaMtprima" args=" " scope="PUBLIC" type="ptFunction" line="947">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="listaProduto" args=" " scope="PUBLIC" type="ptFunction" line="1000">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="setposition" args="<oLbx> " scope="PUBLIC" type="ptFunction" line="1080">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="mpsetposition" args="<oLbx> " scope="PUBLIC" type="ptFunction" line="1089">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="setmtprimacfg" args="<nrec> " scope="PUBLIC" type="ptFunction" line="1096">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="setprdtcfg" args="<nrec> " scope="PUBLIC" type="ptFunction" line="1121">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="searchProductDown" args="<oList> " scope="PUBLIC" type="ptFunction" line="1158">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="searchProductUp" args="<oList> " scope="PUBLIC" type="ptFunction" line="1188">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="saveclidata" args=" " scope="PUBLIC" type="ptFunction" line="1222">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="getclidata" args=" " scope="PUBLIC" type="ptFunction" line="1244">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="saveprdtdata" args=" " scope="PUBLIC" type="ptFunction" line="1263">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgConfig" args=" " scope="PUBLIC" type="ptFunction" line="1293">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="loadconfig" args=" " scope="PUBLIC" type="ptFunction" line="1338">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="saveconfig" args=" " scope="PUBLIC" type="ptFunction" line="1358">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="setnavpath" args="<user> " scope="PUBLIC" type="ptFunction" line="1383">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="btnprevious" args="<sdatabase> " scope="PUBLIC" type="ptFunction" line="1402">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="btnnext" args="<sdatabase> " scope="PUBLIC" type="ptFunction" line="1462">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="btnNovo" args="<sdatabase> " scope="PUBLIC" type="ptFunction" line="1524">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="ndxupdate" args=" " scope="PUBLIC" type="ptFunction" line="1595">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="ndxload" args=" " scope="PUBLIC" type="ptFunction" line="1607">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="loadprdtdata" args=" " scope="PUBLIC" type="ptFunction" line="1618">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="lgetmtprimanome" args="<ncdg> " scope="PUBLIC" type="ptFunction" line="1637">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="lgetclinome" args="<ncdg> " scope="PUBLIC" type="ptFunction" line="1684">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="loadmtprimadata" args=" " scope="PUBLIC" type="ptFunction" line="1714">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="savemtprimadata" args=" " scope="PUBLIC" type="ptFunction" line="1730">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="sgetdate" args="<dtinfo> " scope="PUBLIC" type="ptFunction" line="1758">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="makehead" args=" " scope="PUBLIC" type="ptFunction" line="1778">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="makebody" args=" " scope="PUBLIC" type="ptFunction" line="1826">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="makefooter" args=" " scope="PUBLIC" type="ptFunction" line="1888">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="makefilename" args=" " scope="PUBLIC" type="ptFunction" line="1905">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="quicksave" args=" " scope="PUBLIC" type="ptFunction" line="1967">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="quickload" args=" " scope="PUBLIC" type="ptFunction" line="2014">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="GravarLaudo" args=" " scope="PUBLIC" type="ptFunction" line="2061">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="dlgLoadLaudo" args=" " scope="PUBLIC" type="ptFunction" line="2089">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="xsetprdtcfg" args="<nrec> " scope="PUBLIC" type="ptFunction" line="2153">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="colar" args=" " scope="PUBLIC" type="ptFunction" line="2212">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="doParse" args=" " scope="PUBLIC" type="ptFunction" line="2224">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="getOP" args="<sRastreio> " scope="PUBLIC" type="ptFunction" line="2238">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="getOF" args="<sRastreio> " scope="PUBLIC" type="ptFunction" line="2297">
+   <tag filename="C:\laudomaker\laudomaker.prg" name="lastproduct" args=" " scope="PUBLIC" type="ptFunction" line="2355">
+</taglist>

@@ -1,0 +1,35 @@
+-I"C:\des\build\bcc\include;C:\des\build\fwh\include;C:\des\build\xhb\include;;" +
+-L"C:\des\build\bcc\lib;C:\des\build\bcc\lib\psdk;C:\des\build\fwh\lib;C:\des\build\xhb\lib;;;;;" +
+-aa +
+-Gn -Tpe -s +
+c0w32.obj +    
+"C:\laudomaker\laudomaker.obj", + 
+"C:\laudomaker\prj_Laudomaker.EXE", +   
+"C:\laudomaker\prj_Laudomaker.map", +   
+FiveHx.lib FiveHC.lib +
+rtl.lib +      
+vm.lib +       
+gtgui.lib  + 
+lang.lib +     
+macro.lib +    
+rdd.lib +      
+codepage.lib + 
+dbfntx.lib +   
+dbffpt.lib +   
+hbsix.lib    + 
+common.lib +   
+pp.lib +       
+ct.lib +       
+lang.lib +       
+pcrepos.lib +       
+png.lib +       
+tip.lib +       
+zlib.lib +       
+hbzip.lib +       
+cw32.lib +     
+import32.lib + 
+nddeapi.lib +
+iphlpapi.lib +
+rasapi32.lib +
+shell32.lib +
+,

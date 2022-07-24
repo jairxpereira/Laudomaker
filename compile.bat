@@ -1,0 +1,2 @@
+c:\utils\buildx laudomaker
+
